@@ -5,6 +5,14 @@ import { getFeaturedProducts } from "@/lib/data";
 import { ProductCard } from "@/components/product-card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { AetherLogo } from "@/components/icons";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { ArrowRight } from "lucide-react";
 
 export default async function HomePage() {
   const featuredProducts = await getFeaturedProducts();
@@ -12,7 +20,7 @@ export default async function HomePage() {
 
   return (
     <div className="flex flex-col">
-      <section className="relative h-[60dvh] md:h-[80dvh] w-full flex items-center justify-center text-center text-white">
+      <section className="relative w-full h-[80vh] md:h-[90vh] overflow-hidden">
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
@@ -23,31 +31,50 @@ export default async function HomePage() {
             data-ai-hint={heroImage.imageHint}
           />
         )}
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 flex flex-col items-center gap-6 px-4">
-          <div className="bg-black/50 p-4 rounded-full backdrop-blur-sm">
-            <AetherLogo className="w-24 h-24 text-white" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+        <div className="relative z-10 flex flex-col items-center justify-end h-full text-center pb-16 md:pb-24 px-4">
+          <div className="bg-background/50 p-4 rounded-full backdrop-blur-sm mb-4">
+            <AetherLogo className="w-16 h-16 md:w-24 md:h-24 text-foreground" />
           </div>
-          <h1 className="text-4xl md:text-6xl font-headline tracking-tighter">
-            Invisible Technology, Visible Luxury
+          <h1 className="text-4xl md:text-6xl font-headline tracking-tighter text-foreground">
+            Radical Minimalism
           </h1>
-          <p className="max-w-2xl text-lg text-neutral-200">
+          <p className="max-w-2xl text-lg text-foreground/80 mt-4">
             A curated collection of high-end clothing, jewelry, and accessories for the discerning individual.
           </p>
-          <Button asChild size="lg" className="bg-white text-black hover:bg-neutral-200">
-            <Link href="/collections/all">Shop The Collection</Link>
+          <Button asChild size="lg" className="mt-8 group">
+            <Link href="/collections/all">
+              Shop The Collection <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </Button>
         </div>
       </section>
 
-      <section className="py-12 md:py-24">
+      <section className="py-16 md:py-24 bg-secondary/50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-headline text-center mb-12">Featured Products</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {featuredProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-headline">Featured Products</h2>
+            <p className="text-muted-foreground mt-2">Discover our most popular items.</p>
           </div>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {featuredProducts.map((product) => (
+                <CarouselItem key={product.id} className="sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                  <div className="p-1">
+                    <ProductCard product={product} />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden lg:inline-flex" />
+            <CarouselNext className="hidden lg:inline-flex" />
+          </Carousel>
         </div>
       </section>
     </div>
