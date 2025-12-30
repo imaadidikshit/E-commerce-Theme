@@ -1,7 +1,8 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { getFeaturedProducts } from "@/lib/data";
+import { getFeaturedProducts, getCollections } from "@/lib/data";
 import { ProductCard } from "@/components/product-card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { AetherLogo } from "@/components/icons";
@@ -12,11 +13,38 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Quote } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default async function HomePage() {
   const featuredProducts = await getFeaturedProducts();
+  const collections = (await getCollections()).filter(c => c.handle !== 'all');
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-1');
+  const philosophyImage = PlaceHolderImages.find(p => p.id === 'philosophy-1');
+
+  const testimonials = [
+    {
+      quote: "The quality is simply unmatched. My Aurora Ring is a work of art, and I receive compliments on it constantly.",
+      name: "Eleanor Vance",
+      handle: "@eleanorvance",
+    },
+    {
+      quote: "Aether has redefined my wardrobe. The cashmere sweater is the softest, most luxurious piece I own. Worth every penny.",
+      name: "James Fitzgerald",
+      handle: "@jamesfitz",
+    },
+    {
+      quote: "I love the minimalist aesthetic and the story behind the brand. The Onyx Tote is my everyday companion – stylish and functional.",
+      name: "Sophia Chen",
+      handle: "@sophiachen",
+    },
+  ];
+
+  const categoryImages: {[key: string]: string | undefined} = {
+    'jewelry': PlaceHolderImages.find(p => p.id === 'cat-jewelry')?.imageUrl,
+    'clothing': PlaceHolderImages.find(p => p.id === 'cat-clothing')?.imageUrl,
+    'accessories': PlaceHolderImages.find(p => p.id === 'cat-accessories')?.imageUrl,
+  }
 
   return (
     <div className="flex flex-col">
@@ -50,6 +78,38 @@ export default async function HomePage() {
         </div>
       </section>
 
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-headline">Shop by Category</h2>
+            <p className="text-muted-foreground mt-2">Explore our curated collections.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {collections.map((collection) => (
+              <Link href={`/collections/${collection.handle}`} key={collection.id} className="group relative">
+                <div className="aspect-[4/5] w-full overflow-hidden rounded-lg">
+                  {categoryImages[collection.handle] && (
+                     <Image
+                        src={categoryImages[collection.handle]!}
+                        alt={`A collection of ${collection.title}`}
+                        width={400}
+                        height={500}
+                        className="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                        data-ai-hint={collection.title.toLowerCase()}
+                      />
+                  )}
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg" />
+                <div className="absolute bottom-0 left-0 p-6">
+                  <h3 className="text-2xl font-headline text-primary-foreground">{collection.title}</h3>
+                  <p className="text-sm text-primary-foreground/80 mt-1">View Collection</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 md:py-24 bg-secondary/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -77,6 +137,64 @@ export default async function HomePage() {
           </Carousel>
         </div>
       </section>
+
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div className="aspect-[4/5] w-full overflow-hidden rounded-lg">
+                 {philosophyImage && (
+                    <Image
+                        src={philosophyImage.imageUrl}
+                        alt={philosophyImage.description}
+                        width={600}
+                        height={750}
+                        className="h-full w-full object-cover object-center"
+                        data-ai-hint={philosophyImage.imageHint}
+                    />
+                 )}
+            </div>
+            <div className="max-w-xl">
+                <p className="text-primary font-semibold tracking-wide">Our Philosophy</p>
+                <h2 className="text-3xl md:text-4xl font-headline mt-2">Less, but better.</h2>
+                <p className="text-muted-foreground mt-4 text-lg">
+                    At Aether, we believe in radical minimalism. We pare everything back to its essential qualities, creating pieces that are timeless, not trendy. Our focus is on impeccable craftsmanship, the finest materials, and sustainable practices. 
+                </p>
+                <p className="text-muted-foreground mt-4 text-lg">
+                    Each item in our collection is designed to be a quiet statement of quality, intended to be loved and worn for years to come.
+                </p>
+                 <Button asChild variant="link" className="mt-4 p-0 text-lg">
+                    <Link href="#">
+                        Read Our Story <ArrowRight className="h-4 w-4 ml-2" />
+                    </Link>
+                </Button>
+            </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-secondary/50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-headline">From Our Community</h2>
+            <p className="text-muted-foreground mt-2">What our customers are saying.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index}>
+                <CardContent className="p-6 h-full flex flex-col">
+                  <Quote className="w-8 h-8 text-primary/50 mb-4" />
+                  <p className="flex-1 text-muted-foreground">"{testimonial.quote}"</p>
+                  <div className="mt-4">
+                    <p className="font-semibold">{testimonial.name}</p>
+                    <p className="text-sm text-muted-foreground">{testimonial.handle}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }
+
+    

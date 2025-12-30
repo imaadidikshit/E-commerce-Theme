@@ -77,6 +77,30 @@
       "description": "Woman wearing elegant jewelry",
       "imageUrl": "https://images.unsplash.com/photo-1731194862220-92945fe3a5dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWxlZ2FudCUyMGpld2Vscnl8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "elegant jewelry"
+    },
+    {
+      "id": "philosophy-1",
+      "description": "Minimalist architectural detail",
+      "imageUrl": "https://images.unsplash.com/photo-1519962149839-994119910a9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxNaW5pbWFsaXN0JTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc2NzEzNDYxOHww&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "minimalist architecture"
+    },
+    {
+      "id": "cat-jewelry",
+      "description": "Jewelry collection",
+      "imageUrl": "https://images.unsplash.com/photo-1617038220319-c6b743037642?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxqZXdlbHJ5JTIwY29sbGVjdGlvbnxlbnwwfHx8fDE3NjcxMzQ2ODZ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "jewelry collection"
+    },
+    {
+      "id": "cat-clothing",
+      "description": "Minimalist clothing rack",
+      "imageUrl": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtaW5pbWFsaXN0JTIwY2xvdGhpbmd8ZW58MHx8fHwxNzY3MTM0NzE4fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "minimalist clothing"
+    },
+    {
+      "id": "cat-accessories",
+      "description": "Designer handbag and watch",
+      "imageUrl": "https://images.unsplash.com/photo-1579566346927-c6276a0a996f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsYWNlc3Nvcmllc3xlbnwwfHx8fDE3NjcxMzQ3NDN8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "luxury accessories"
     }
   ]
 }
