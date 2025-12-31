@@ -21,19 +21,19 @@
     {
       "id": "ring-3",
       "description": "Diamond ring on a model's hand",
-      "imageUrl": "https://images.unsplash.com/photo-1716366192995-ba6a256b2020?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyaW5nJTIwbW9kZWx8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1716366192995-ba6a256b2020?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyaW5nJTIwbW9kZWx8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "ring model"
     },
     {
       "id": "tote-1",
       "description": "Black leather tote bag",
-      "imageUrl": "https://images.unsplash.com/photo-1512505069313-c830f5a9643f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsZWF0aGVyJTIwdG90ZXxlbnwwfHx8fDE3NjcwMzI1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1512505069313-c830f5a9643f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsZWF0aGVyJTIwdG90ZXxlbnwwfHx8fDE3NjcwMzI1MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "leather tote"
     },
     {
       "id": "tote-2",
       "description": "Cognac leather tote bag",
-      "imageUrl": "https://images.unsplash.com/photo-1741086154510-522e68f76933?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxiYWclMjBkZXRhaWx8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1741086154510-522e68f76933?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxiYWclMjBkZXRhaWx8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "bag detail"
     },
     {
