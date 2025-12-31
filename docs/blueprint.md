@@ -1,7 +1,7 @@
 # **App Name**: Aether
 
 ## Core Features:
-
+new branch
 - Mega Menu Configuration: Allow merchants to build and configure a mega menu with nested menus and image blocks within the dropdown, configurable via the theme editor.
 - Transparent Header with Scroll State: Implement a header that is initially transparent, overlapping hero images, but transitions to a solid background color on scroll. This should be togglable in the theme settings.
 - Advanced Product Filtering (AJAX): Utilize Shopify's native Storefront Filtering (facets) and ensure that filtering on collection pages is AJAX-driven to prevent full page reloads.
