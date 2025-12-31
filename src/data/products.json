@@ -1,0 +1,122 @@
+[
+  {
+    "id": "prod_1",
+    "handle": "the-aurora-ring",
+    "name": "The Aurora Ring",
+    "description": "A masterpiece of craftsmanship, The Aurora Ring features a stunning center diamond surrounded by a halo of smaller, brilliant-cut stones. Set in 18k white gold, its timeless elegance is unmatched.",
+    "descriptionHtml": "<p>A masterpiece of craftsmanship, The Aurora Ring features a stunning center diamond surrounded by a halo of smaller, brilliant-cut stones. Set in 18k white gold, its timeless elegance is unmatched.</p><p>Perfect for engagements, anniversaries, or as a statement of self-love.</p>",
+    "price": 2400,
+    "featuredImage": { "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkaWFtb25kJTIwcmluZ3xlbnwwfHx8fDE3NjcxMDIxODh8MA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "The Aurora Ring", "hint": "diamond ring" },
+    "images": [
+      { "id": "img_r1_1", "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkaWFtb25kJTIwcmluZ3xlbnwwfHx8fDE3NjcxMDIxODh8MA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Front view of The Aurora Ring", "hint": "diamond ring" },
+      { "id": "img_r1_2", "url": "https://images.unsplash.com/photo-1664178266066-e37e0d25e6a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxqZXdlbHJ5JTIwbGlmZXN0eWxlfGVufDB8fHx8MTc2NzEzNDUzOHww&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Side view of The Aurora Ring", "hint": "jewelry lifestyle" },
+      { "id": "img_r1_3", "url": "https://images.unsplash.com/photo-1716366192995-ba6a256b2020?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyaW5nJTIwbW9kZWx8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "The Aurora Ring on a model", "hint": "ring model" }
+    ],
+    "options": [
+      { "name": "Color", "values": ["White Gold", "Yellow Gold", "Rose Gold"] },
+      { "name": "Size", "values": ["5", "6", "7", "8"] }
+    ],
+    "variants": [
+      { "id": "var_r1_wg_5", "title": "White Gold / 5", "price": 2400, "imageId": "img_r1_1", "color": "White Gold", "colorHex": "#E5E7EB", "size": "5", "availableForSale": true },
+      { "id": "var_r1_yg_6", "title": "Yellow Gold / 6", "price": 2450, "imageId": "img_r1_1", "color": "Yellow Gold", "colorHex": "#FBBF24", "size": "6", "availableForSale": true },
+      { "id": "var_r1_rg_7", "title": "Rose Gold / 7", "price": 2450, "imageId": "img_r1_1", "color": "Rose Gold", "colorHex": "#FBCFE8", "size": "7", "availableForSale": true },
+      { "id": "var_r1_wg_8", "title": "White Gold / 8", "price": 2400, "imageId": "img_r1_1", "color": "White Gold", "colorHex": "#E5E7EB", "size": "8", "availableForSale": false }
+    ],
+    "tags": ["jewelry", "ring", "featured"]
+  },
+  {
+    "id": "prod_2",
+    "handle": "onyx-leather-tote",
+    "name": "Onyx Leather Tote",
+    "description": "The Onyx Leather Tote is the epitome of functional luxury. Crafted from full-grain Italian leather, its minimalist silhouette is designed to carry your essentials with effortless style. Features a magnetic closure and an interior zip pocket.",
+    "descriptionHtml": "<p>The Onyx Leather Tote is the epitome of functional luxury. Crafted from full-grain Italian leather, its minimalist silhouette is designed to carry your essentials with effortless style.</p><ul><li>Full-grain Italian leather</li><li>Magnetic closure</li><li>Interior zip pocket</li></ul>",
+    "price": 750,
+    "featuredImage": { "url": "https://images.unsplash.com/photo-1512505069313-c830f5a9643f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsZWF0aGVyJTIwdG90ZXxlbnwwfHx8fDE3NjcwMzI1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Onyx Leather Tote", "hint": "leather tote" },
+    "images": [
+      { "id": "img_t1_1", "url": "https://images.unsplash.com/photo-1512505069313-c830f5a9643f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsZWF0aGVyJTIwdG90ZXxlbnwwfHx8fDE3NjcwMzI1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Front view of Onyx Leather Tote", "hint": "leather tote" },
+      { "id": "img_t1_2", "url": "https://images.unsplash.com/photo-1741086154510-522e68f76933?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxiYWclMjBkZXRhaWx8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Detail of Onyx Leather Tote", "hint": "bag detail" }
+    ],
+    "options": [
+      { "name": "Color", "values": ["Black", "Cognac"] }
+    ],
+    "variants": [
+      { "id": "var_t1_b", "title": "Black", "price": 750, "imageId": "img_t1_1", "color": "Black", "colorHex": "#1A1A1A", "availableForSale": true },
+      { "id": "var_t1_c", "title": "Cognac", "price": 750, "imageId": "img_t1_2", "color": "Cognac", "colorHex": "#964B00", "availableForSale": true }
+    ],
+    "tags": ["accessories", "bag", "featured"]
+  },
+  {
+    "id": "prod_3",
+    "handle": "cashmere-crewneck-sweater",
+    "name": "Cashmere Crewneck",
+    "description": "Experience unparalleled softness with our 100% Grade-A Mongolian Cashmere Crewneck. A timeless classic, this sweater offers a relaxed fit for versatile layering. Sustainably sourced and expertly crafted.",
+    "descriptionHtml": "<p>Experience unparalleled softness with our 100% Grade-A Mongolian Cashmere Crewneck. A timeless classic, this sweater offers a relaxed fit for versatile layering. Sustainably sourced and expertly crafted.</p>",
+    "price": 320,
+    "featuredImage": { "url": "https://images.unsplash.com/photo-1677847208228-fe3c52feb441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYXNobWVyZSUyMHN3ZWF0ZXJ8ZW58MHx8fHwxNzY3MDI2MzcxfDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Cashmere Crewneck in Heather Grey", "hint": "cashmere sweater" },
+    "images": [
+      { "id": "img_s1_1", "url": "https://images.unsplash.com/photo-1677847208228-fe3c52feb441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYXNobWVyZSUyMHN3ZWF0ZXJ8ZW58MHx8fHwxNzY3MDI2MzcxfDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Heather Grey sweater", "hint": "cashmere sweater" },
+      { "id": "img_s1_2", "url": "https://images.unsplash.com/photo-1737674725424-d08449adb7fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYW1lbCUyMHN3ZWF0ZXJ8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Camel sweater", "hint": "camel sweater" }
+    ],
+    "options": [
+      { "name": "Color", "values": ["Heather Grey", "Camel"] },
+      { "name": "Size", "values": ["S", "M", "L", "XL"] }
+    ],
+    "variants": [
+        { "id": "var_s1_hg_s", "title": "Heather Grey / S", "price": 320, "imageId": "img_s1_1", "color": "Heather Grey", "colorHex": "#D1D5DB", "size": "S", "availableForSale": true },
+        { "id": "var_s1_hg_m", "title": "Heather Grey / M", "price": 320, "imageId": "img_s1_1", "color": "Heather Grey", "colorHex": "#D1D5DB", "size": "M", "availableForSale": true },
+        { "id": "var_s1_hg_l", "title": "Heather Grey / L", "price": 320, "imageId": "img_s1_1", "color": "Heather Grey", "colorHex": "#D1D5DB", "size": "L", "availableForSale": true },
+        { "id": "var_s1_hg_xl", "title": "Heather Grey / XL", "price": 320, "imageId": "img_s1_1", "color": "Heather Grey", "colorHex": "#D1D5DB", "size": "XL", "availableForSale": false },
+        { "id": "var_s1_c_s", "title": "Camel / S", "price": 320, "imageId": "img_s1_2", "color": "Camel", "colorHex": "#C19A6B", "size": "S", "availableForSale": true },
+        { "id": "var_s1_c_m", "title": "Camel / M", "price": 320, "imageId": "img_s1_2", "color": "Camel", "colorHex": "#C19A6B", "size": "M", "availableForSale": true },
+        { "id": "var_s1_c_l", "title": "Camel / L", "price": 320, "imageId": "img_s1_2", "color": "Camel", "colorHex": "#C19A6B", "size": "L", "availableForSale": true },
+        { "id": "var_s1_c_xl", "title": "Camel / XL", "price": 320, "imageId": "img_s1_2", "color": "Camel", "colorHex": "#C19A6B", "size": "XL", "availableForSale": true }
+    ],
+    "tags": ["clothing", "sweater", "featured"]
+  },
+  {
+    "id": "prod_4",
+    "handle": "celestial-pendant-necklace",
+    "name": "Celestial Pendant",
+    "description": "A delicate 14k gold chain holds a mesmerizing moonstone pendant, known for its calming energy and connection to the moon. The Celestial Pendant is a subtle yet enchanting addition to any look.",
+    "descriptionHtml": "<p>A delicate 14k gold chain holds a mesmerizing moonstone pendant, known for its calming energy and connection to the moon. The Celestial Pendant is a subtle yet enchanting addition to any look.</p>",
+    "price": 450,
+    "featuredImage": { "url": "https://images.unsplash.com/photo-1611107683227-e9060eccd846?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxnb2xkJTIwbmVja2xhY2V8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Celestial Pendant Necklace", "hint": "gold necklace" },
+    "images": [
+        { "id": "img_n1_1", "url": "https://images.unsplash.com/photo-1611107683227-e9060eccd846?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxnb2xkJTIwbmVja2xhY2V8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Celestial Pendant Necklace", "hint": "gold necklace" },
+        { "id": "img_n1_2", "url": "https://images.unsplash.com/photo-1614999612412-3b1dbcd68e40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZWNrbGFjZSUyMG1vZGVsfGVufDB8fHx8MTc2NzEzNDUzOHww&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Celestial Pendant on model", "hint": "necklace model" }
+    ],
+    "options": [],
+    "variants": [
+        { "id": "var_n1_def", "title": "Default Title", "price": 450, "imageId": "img_n1_1", "availableForSale": true }
+    ],
+    "tags": ["jewelry", "necklace", "featured"]
+  },
+  {
+    "id": "prod_5",
+    "handle": "silk-slip-dress",
+    "name": "Silk Slip Dress",
+    "description": "Cut on the bias from lustrous 100% silk charmeuse, this slip dress drapes beautifully over the body. Featuring a subtle V-neck and adjustable spaghetti straps, it's the essence of minimalist elegance.",
+    "descriptionHtml": "<p>Cut on the bias from lustrous 100% silk charmeuse, this slip dress drapes beautifully over the body. Featuring a subtle V-neck and adjustable spaghetti straps, it's the essence of minimalist elegance.</p>",
+    "price": 480,
+    "featuredImage": { "url": "https://images.unsplash.com/photo-1652445830470-9852667150b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzaWxrJTIwZHJlc3N8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Silk Slip Dress in Black", "hint": "silk dress" },
+    "images": [
+      { "id": "img_d1_1", "url": "https://images.unsplash.com/photo-1652445830470-9852667150b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzaWxrJTIwZHJlc3N8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Black dress", "hint": "silk dress" },
+      { "id": "img_d1_2", "url": "https://images.unsplash.com/photo-1673936089727-6edda18b127e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaGFtcGFnbmUlMjBkcmVzc3xlbnwwfHx8fDE3NjcxMzQ1Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Champagne dress", "hint": "champagne dress" }
+    ],
+    "options": [
+      { "name": "Color", "values": ["Onyx", "Champagne"] },
+      { "name": "Size", "values": ["XS", "S", "M", "L"] }
+    ],
+    "variants": [
+      { "id": "var_d1_o_xs", "title": "Onyx / XS", "price": 480, "imageId": "img_d1_1", "color": "Onyx", "colorHex": "#1A1A1A", "size": "XS", "availableForSale": true },
+      { "id": "var_d1_o_s", "title": "Onyx / S", "price": 480, "imageId": "img_d1_1", "color": "Onyx", "colorHex": "#1A1A1A", "size": "S", "availableForSale": true },
+      { "id": "var_d1_o_m", "title": "Onyx / M", "price": 480, "imageId": "img_d1_1", "color": "Onyx", "colorHex": "#1A1A1A", "size": "M", "availableForSale": true },
+      { "id": "var_d1_o_l", "title": "Onyx / L", "price": 480, "imageId": "img_d1_1", "color": "Onyx", "colorHex": "#1A1A1A", "size": "L", "availableForSale": false },
+      { "id": "var_d1_c_xs", "title": "Champagne / XS", "price": 480, "imageId": "img_d1_2", "color": "Champagne", "colorHex": "#F7E7CE", "size": "XS", "availableForSale": true },
+      { "id": "var_d1_c_s", "title": "Champagne / S", "price": 480, "imageId": "img_d1_2", "color": "Champagne", "colorHex": "#F7E7CE", "size": "S", "availableForSale": true },
+      { "id": "var_d1_c_m", "title": "Champagne / M", "price": 480, "imageId": "img_d1_2", "color": "Champagne", "colorHex": "#F7E7CE", "size": "M", "availableForSale": true },
+      { "id": "var_d1_c_l", "title": "Champagne / L", "price": 480, "imageId": "img_d1_2", "color": "Champagne", "colorHex": "#F7E7CE", "size": "L", "availableForSale": true }
+    ],
+    "tags": ["clothing", "dress"]
+  }
+]]
