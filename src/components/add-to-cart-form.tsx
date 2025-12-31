@@ -1,16 +1,22 @@
 
 "use client";
 
-import { useState, useMemo, useCallback } from 'react';
-import type { Product, Variant, ProductOption } from '@/lib/types';
+import { useState, useMemo } from 'react';
+import type { Product } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { useCart } from '@/context/cart-context';
-import { useToast } from '@/hooks/use-toast';
 import { cn } from '@/lib/utils';
-import { RadioGroup, RadioGroupItem } from './ui/radio-group';
-import { Label } from './ui/label';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogDescription,
+} from "@/components/ui/alert-dialog";
+import { CheckCircle, XCircle } from 'lucide-react';
 
-function VariantSelector({ option, selectedOptions, setSelectedOptions }: { option: ProductOption, selectedOptions: { [key: string]: string }, setSelectedOptions: React.Dispatch<React.SetStateAction<{ [key: string]: string }>> }) {
+function VariantSelector({ option, selectedOptions, setSelectedOptions }: { option: { name: string, values: string[] }, selectedOptions: { [key: string]: string }, setSelectedOptions: React.Dispatch<React.SetStateAction<{ [key: string]: string }>> }) {
   const isColor = option.name.toLowerCase() === 'color';
 
   return (
@@ -46,8 +52,8 @@ function VariantSelector({ option, selectedOptions, setSelectedOptions }: { opti
 
 
 export function AddToCartForm({ product }: { product: Product }) {
-  const { addToCart } = useCart();
-  const { toast } = useToast();
+  const { addToCart, setIsCartOpen } = useCart();
+  const [alertState, setAlertState] = useState<{ open: boolean; title: string; description: string; isError: boolean }>({ open: false, title: '', description: '', isError: false });
 
   const initialOptions = useMemo(() => {
     const options: { [key: string]: string } = {};
@@ -62,69 +68,74 @@ export function AddToCartForm({ product }: { product: Product }) {
   const selectedVariant = useMemo(() => {
     return product.variants.find(variant => {
       return Object.entries(selectedOptions).every(([name, value]) => {
-        if (name.toLowerCase() === 'color') return variant.color === value;
-        if (name.toLowerCase() === 'size') return variant.size === value;
-        return false;
+        // This logic needs to be more robust if option names change
+        const variantOption = variant.title.split(' / ').find(v => option.values.includes(v.trim()));
+        return variant.title.split(' / ').includes(value);
       });
     });
-  }, [product.variants, selectedOptions]);
+  }, [product.variants, selectedOptions, product.options]);
 
   const handleAddToCart = () => {
     if (selectedVariant) {
       if (selectedVariant.availableForSale) {
         addToCart(product, selectedVariant, 1);
-        toast({
-          title: "Added to cart",
-          description: `${product.name} (${selectedVariant.title}) has been added to your cart.`,
-        });
+        setIsCartOpen(true);
+        setTimeout(() => setIsCartOpen(false), 1500);
       } else {
-        toast({
-          variant: "destructive",
-          title: "Sold Out",
-          description: "This variant is currently unavailable.",
-        });
+        setAlertState({ open: true, title: 'Sold Out', description: 'This variant is currently unavailable.', isError: true });
       }
     } else if (product.variants.length > 0 && product.options.length > 0) {
-       toast({
-        variant: "destructive",
-        title: "Unavailable",
-        description: "This combination of options is not available.",
-      });
+       setAlertState({ open: true, title: 'Unavailable', description: 'This combination of options is not available.', isError: true });
     } else if (product.variants.length > 0 && product.options.length === 0) {
         // Case for products with one variant and no options
         const variant = product.variants[0];
         if (variant.availableForSale) {
             addToCart(product, variant, 1);
-            toast({
-                title: "Added to cart",
-                description: `${product.name} has been added to your cart.`,
-            });
+            setIsCartOpen(true);
+            setTimeout(() => setIsCartOpen(false), 1500);
         } else {
-            toast({
-                variant: "destructive",
-                title: "Sold Out",
-                description: "This product is currently unavailable.",
-            });
+            setAlertState({ open: true, title: 'Sold Out', description: 'This product is currently unavailable.', isError: true });
         }
     }
   };
   
-  const isAddToCartDisabled = product.variants.length > 0 && !selectedVariant || !selectedVariant?.availableForSale;
+  const isAddToCartDisabled = product.variants.length > 0 && !selectedVariant || (selectedVariant && !selectedVariant.availableForSale);
 
   return (
-    <div id="add-to-cart-form" className="space-y-8">
-      {product.options.map(option => (
-        <VariantSelector
-          key={option.name}
-          option={option}
-          selectedOptions={selectedOptions}
-          setSelectedOptions={setSelectedOptions}
-        />
-      ))}
-      
-      <Button size="lg" className="w-full" onClick={handleAddToCart} disabled={isAddToCartDisabled}>
-        {selectedVariant?.availableForSale === false ? "Sold Out" : "Add to Cart"}
-      </Button>
-    </div>
+    <>
+      <div id="add-to-cart-form" className="space-y-8">
+        {product.options.map(option => (
+          <VariantSelector
+            key={option.name}
+            option={option}
+            selectedOptions={selectedOptions}
+            setSelectedOptions={setSelectedOptions}
+          />
+        ))}
+        
+        <Button size="lg" className="w-full" onClick={handleAddToCart} disabled={isAddToCartDisabled}>
+          {selectedVariant?.availableForSale === false ? "Sold Out" : "Add to Cart"}
+        </Button>
+      </div>
+
+      <AlertDialog open={alertState.open} onOpenChange={(open) => setAlertState(s => ({ ...s, open }))}>
+        <AlertDialogContent className="text-center">
+          <AlertDialogHeader className="items-center">
+            {alertState.isError ? (
+                <XCircle className="w-12 h-12 text-destructive" />
+            ) : (
+                <CheckCircle className="w-12 h-12 text-green-500" />
+            )}
+            <AlertDialogTitle className="pt-4">{alertState.title}</AlertDialogTitle>
+            <AlertDialogDescription>
+              {alertState.description}
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogAction onClick={() => setAlertState({ open: false, title: '', description: '', isError: false })}>
+            Close
+          </AlertDialogAction>
+        </AlertDialogContent>
+      </AlertDialog>
+    </>
   );
 }

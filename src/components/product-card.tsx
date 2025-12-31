@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -9,11 +10,9 @@ import type { Product } from "@/lib/types";
 import { cn, formatPrice } from "@/lib/utils";
 import { useCart } from "@/context/cart-context";
 import { Button } from "@/components/ui/button";
-import { useToast } from "@/hooks/use-toast";
 
 export function ProductCard({ product }: { product: Product }) {
-  const { addToCart } = useCart();
-  const { toast } = useToast();
+  const { addToCart, setIsCartOpen } = useCart();
   const [activeImage, setActiveImage] = useState(product.featuredImage);
   const secondImage = product.images[1];
 
@@ -23,10 +22,8 @@ export function ProductCard({ product }: { product: Product }) {
     const defaultVariant = product.variants[0];
     if (defaultVariant) {
       addToCart(product, defaultVariant, 1);
-      toast({
-        title: "Added to cart",
-        description: `${product.name} has been added to your cart.`,
-      });
+      setIsCartOpen(true);
+      setTimeout(() => setIsCartOpen(false), 1500);
     }
   };
 
