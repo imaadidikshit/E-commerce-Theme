@@ -1,25 +1,15 @@
+
 import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
-
 export default function SustainabilityPage() {
-    // Dynamically fetch the image from your central config
-    const sustainabilityImage = PlaceHolderImages.find(p => p.id === "sustainability-1");
-
     return (
          <div className="bg-background">
             <div className="relative h-[50vh] bg-secondary/50">
-                {sustainabilityImage ? (
-                    <Image
-                        src={sustainabilityImage.imageUrl}
-                        alt={sustainabilityImage.description}
-                        fill
-                        className="object-cover"
-                        priority
-                    />
-                ) : (
-                    // Fallback just in case, using a safe color
-                    <div className="w-full h-full bg-stone-200" />
-                )}
+                <Image
+                    src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2813&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8f"
+                    alt="Hands holding a small plant"
+                    fill
+                    className="object-cover"
+                />
                  <div className="absolute inset-0 bg-gradient-to-t from-background" />
             </div>
             <div className="container mx-auto px-4 -mt-24 relative z-10">

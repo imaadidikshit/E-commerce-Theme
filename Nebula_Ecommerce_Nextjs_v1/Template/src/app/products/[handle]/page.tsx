@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getProductByHandle, getFeaturedProducts } from '@/lib/data';
@@ -12,8 +13,7 @@ import { ProductCard } from '@/components/product-card';
 import { StickyAddToCart } from '@/components/sticky-add-to-cart';
 import { AddToCartForm } from '@/components/add-to-cart-form';
 
-export async function generateMetadata(props: { params: Promise<{ handle: string }> }) {
-  const params = await props.params;
+export async function generateMetadata({ params }: { params: { handle: string } }) {
   const product = await getProductByHandle(params.handle);
   if (!product) {
     return { title: "Product Not Found" };
@@ -24,13 +24,9 @@ export async function generateMetadata(props: { params: Promise<{ handle: string
   };
 }
 
-export default async function ProductPage(props: { params: Promise<{ handle: string }> }) {
-  const params = await props.params;
+export default async function ProductPage({ params }: { params: { handle: string } }) {
   const product = await getProductByHandle(params.handle);
-  
-  // Fetch featured products and filter out the current one
-  const allFeatured = await getFeaturedProducts();
-  const relatedProducts = allFeatured.filter(p => p.id !== product?.id).slice(0, 4);
+  const relatedProducts = (await getFeaturedProducts()).filter(p => p.id !== product?.id).slice(0, 4);
 
   if (!product) {
     notFound();

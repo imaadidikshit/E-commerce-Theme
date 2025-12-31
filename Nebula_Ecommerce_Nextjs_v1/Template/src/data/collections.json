@@ -1,0 +1,30 @@
+[
+    {
+        "id": "coll_1",
+        "handle": "all",
+        "title": "All Products",
+        "description": "Browse our entire curated selection of luxury goods.",
+        "productIds": ["prod_1", "prod_2", "prod_3", "prod_4", "prod_5"]
+    },
+    {
+        "id": "coll_2",
+        "handle": "jewelry",
+        "title": "Jewelry",
+        "description": "Exquisite rings, necklaces, and bracelets crafted from the finest materials.",
+        "productIds": ["prod_1", "prod_4"]
+    },
+    {
+        "id": "coll_3",
+        "handle": "clothing",
+        "title": "Clothing",
+        "description": "Timeless apparel made from luxurious fabrics like cashmere and silk.",
+        "productIds": ["prod_3", "prod_5"]
+    },
+     {
+        "id": "coll_4",
+        "handle": "accessories",
+        "title": "Accessories",
+        "description": "The finishing touches. Discover our collection of leather goods and more.",
+        "productIds": ["prod_2"]
+    }
+]
