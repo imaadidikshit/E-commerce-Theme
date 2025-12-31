@@ -2,8 +2,7 @@ import { getCollectionByHandle } from "@/lib/data";
 import { notFound } from "next/navigation";
 import CollectionView from "@/components/collection-view";
 
-export async function generateMetadata(props: { params: Promise<{ handle: string }> }) {
-  const params = await props.params;
+export async function generateMetadata({ params }: { params: { handle: string } }) {
   const collection = await getCollectionByHandle(params.handle);
   if (!collection) {
     return {
@@ -16,8 +15,7 @@ export async function generateMetadata(props: { params: Promise<{ handle: string
   };
 }
 
-export default async function CollectionPage(props: { params: Promise<{ handle: string }> }) {
-  const params = await props.params;
+export default async function CollectionPage({ params }: { params: { handle:string } }) {
   const collection = await getCollectionByHandle(params.handle);
 
   if (!collection) {

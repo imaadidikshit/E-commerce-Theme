@@ -6,11 +6,11 @@
     "description": "A masterpiece of craftsmanship, The Aurora Ring features a stunning center diamond surrounded by a halo of smaller, brilliant-cut stones. Set in 18k white gold, its timeless elegance is unmatched.",
     "descriptionHtml": "<p>A masterpiece of craftsmanship, The Aurora Ring features a stunning center diamond surrounded by a halo of smaller, brilliant-cut stones. Set in 18k white gold, its timeless elegance is unmatched.</p><p>Perfect for engagements, anniversaries, or as a statement of self-love.</p>",
     "price": 2400,
-    "featuredImage": { "url": "https://images.unsplash.com/photo-1605100804763-eb2fc521a387?q=80&w=1080&auto=format&fit=crop", "width": 800, "height": 1000, "altText": "The Aurora Ring", "hint": "diamond ring" },
+    "featuredImage": { "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkaWFtb25kJTIwcmluZ3xlbnwwfHx8fDE3NjcxMDIxODh8MA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "The Aurora Ring", "hint": "diamond ring" },
     "images": [
-      { "id": "img_r1_1", "url": "https://images.unsplash.com/photo-1605100804763-eb2fc521a387?q=80&w=1080&auto=format&fit=crop", "width": 800, "height": 1000, "altText": "Front view of The Aurora Ring", "hint": "diamond ring" },
-      { "id": "img_r1_2", "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?q=80&w=1080&auto=format&fit=crop", "width": 800, "height": 1000, "altText": "Side view of The Aurora Ring", "hint": "jewelry lifestyle" },
-      { "id": "img_r1_3", "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=1080&auto=format&fit=crop", "width": 800, "height": 1000, "altText": "The Aurora Ring on a model", "hint": "ring model" }
+      { "id": "img_r1_1", "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkaWFtb25kJTIwcmluZ3xlbnwwfHx8fDE3NjcxMDIxODh8MA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Front view of The Aurora Ring", "hint": "diamond ring" },
+      { "id": "img_r1_2", "url": "https://images.unsplash.com/photo-1664178266066-e37e0d25e6a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxqZXdlbHJ5JTIwbGlmZXN0eWxlfGVufDB8fHx8MTc2NzEzNDUzOHww&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Side view of The Aurora Ring", "hint": "jewelry lifestyle" },
+      { "id": "img_r1_3", "url": "https://images.unsplash.com/photo-1716366192995-ba6a256b2020?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyaW5nJTIwbW9kZWx8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "The Aurora Ring on a model", "hint": "ring model" }
     ],
     "options": [
       { "name": "Color", "values": ["White Gold", "Yellow Gold", "Rose Gold"] },
@@ -31,10 +31,10 @@
     "description": "The Onyx Leather Tote is the epitome of functional luxury. Crafted from full-grain Italian leather, its minimalist silhouette is designed to carry your essentials with effortless style. Features a magnetic closure and an interior zip pocket.",
     "descriptionHtml": "<p>The Onyx Leather Tote is the epitome of functional luxury. Crafted from full-grain Italian leather, its minimalist silhouette is designed to carry your essentials with effortless style.</p><ul><li>Full-grain Italian leather</li><li>Magnetic closure</li><li>Interior zip pocket</li></ul>",
     "price": 750,
-    "featuredImage": { "url": "https://images.unsplash.com/photo-1591561954557-26941169b49e?q=80&w=1080&auto=format&fit=crop", "width": 800, "height": 1000, "altText": "Onyx Leather Tote", "hint": "leather tote" },
+    "featuredImage": { "url": "https://images.unsplash.com/photo-1512505069313-c830f5a9643f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsZWF0aGVyJTIwdG90ZXxlbnwwfHx8fDE3NjcwMzI1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Onyx Leather Tote", "hint": "leather tote" },
     "images": [
-      { "id": "img_t1_1", "url": "https://images.unsplash.com/photo-1591561954557-26941169b49e?q=80&w=1080&auto=format&fit=crop", "width": 800, "height": 1000, "altText": "Front view of Onyx Leather Tote", "hint": "leather tote" },
-      { "id": "img_t1_2", "url": "https://images.unsplash.com/photo-1590874103328-3b7d32e7af91?q=80&w=1080&auto=format&fit=crop", "width": 800, "height": 1000, "altText": "Detail of Onyx Leather Tote", "hint": "bag detail" }
+      { "id": "img_t1_1", "url": "https://images.unsplash.com/photo-1512505069313-c830f5a9643f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsZWF0aGVyJTIwdG90ZXxlbnwwfHx8fDE3NjcwMzI1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Front view of Onyx Leather Tote", "hint": "leather tote" },
+      { "id": "img_t1_2", "url": "https://images.unsplash.com/photo-1741086154510-522e68f76933?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxiYWclMjBkZXRhaWx8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Detail of Onyx Leather Tote", "hint": "bag detail" }
     ],
     "options": [
       { "name": "Color", "values": ["Black", "Cognac"] }
@@ -52,10 +52,10 @@
     "description": "Experience unparalleled softness with our 100% Grade-A Mongolian Cashmere Crewneck. A timeless classic, this sweater offers a relaxed fit for versatile layering. Sustainably sourced and expertly crafted.",
     "descriptionHtml": "<p>Experience unparalleled softness with our 100% Grade-A Mongolian Cashmere Crewneck. A timeless classic, this sweater offers a relaxed fit for versatile layering. Sustainably sourced and expertly crafted.</p>",
     "price": 320,
-    "featuredImage": { "url": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1080&auto=format&fit=crop", "width": 800, "height": 1000, "altText": "Cashmere Crewneck in Heather Grey", "hint": "cashmere sweater" },
+    "featuredImage": { "url": "https://images.unsplash.com/photo-1677847208228-fe3c52feb441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYXNobWVyZSUyMHN3ZWF0ZXJ8ZW58MHx8fHwxNzY3MDI2MzcxfDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Cashmere Crewneck in Heather Grey", "hint": "cashmere sweater" },
     "images": [
-      { "id": "img_s1_1", "url": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1080&auto=format&fit=crop", "width": 800, "height": 1000, "altText": "Heather Grey sweater", "hint": "cashmere sweater" },
-      { "id": "img_s1_2", "url": "https://images.unsplash.com/photo-1620799140408-ed5341cd2431?q=80&w=1080&auto=format&fit=crop", "width": 800, "height": 1000, "altText": "Camel sweater", "hint": "camel sweater" }
+      { "id": "img_s1_1", "url": "https://images.unsplash.com/photo-1677847208228-fe3c52feb441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYXNobWVyZSUyMHN3ZWF0ZXJ8ZW58MHx8fHwxNzY3MDI2MzcxfDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Heather Grey sweater", "hint": "cashmere sweater" },
+      { "id": "img_s1_2", "url": "https://images.unsplash.com/photo-1737674725424-d08449adb7fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYW1lbCUyMHN3ZWF0ZXJ8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Camel sweater", "hint": "camel sweater" }
     ],
     "options": [
       { "name": "Color", "values": ["Heather Grey", "Camel"] },
@@ -80,10 +80,10 @@
     "description": "A delicate 14k gold chain holds a mesmerizing moonstone pendant, known for its calming energy and connection to the moon. The Celestial Pendant is a subtle yet enchanting addition to any look.",
     "descriptionHtml": "<p>A delicate 14k gold chain holds a mesmerizing moonstone pendant, known for its calming energy and connection to the moon. The Celestial Pendant is a subtle yet enchanting addition to any look.</p>",
     "price": 450,
-    "featuredImage": { "url": "https://images.unsplash.com/photo-1599643478518-17488fbbcd75?q=80&w=1080&auto=format&fit=crop", "width": 800, "height": 1000, "altText": "Celestial Pendant Necklace", "hint": "gold necklace" },
+    "featuredImage": { "url": "https://images.unsplash.com/photo-1611107683227-e9060eccd846?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxnb2xkJTIwbmVja2xhY2V8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Celestial Pendant Necklace", "hint": "gold necklace" },
     "images": [
-        { "id": "img_n1_1", "url": "https://images.unsplash.com/photo-1599643478518-17488fbbcd75?q=80&w=1080&auto=format&fit=crop", "width": 800, "height": 1000, "altText": "Celestial Pendant Necklace", "hint": "gold necklace" },
-        { "id": "img_n1_2", "url": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=1080&auto=format&fit=crop", "width": 800, "height": 1000, "altText": "Celestial Pendant on model", "hint": "necklace model" }
+        { "id": "img_n1_1", "url": "https://images.unsplash.com/photo-1611107683227-e9060eccd846?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxnb2xkJTIwbmVja2xhY2V8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Celestial Pendant Necklace", "hint": "gold necklace" },
+        { "id": "img_n1_2", "url": "https://images.unsplash.com/photo-1614999612412-3b1dbcd68e40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZWNrbGFjZSUyMG1vZGVsfGVufDB8fHx8MTc2NzEzNDUzOHww&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Celestial Pendant on model", "hint": "necklace model" }
     ],
     "options": [],
     "variants": [
@@ -98,10 +98,10 @@
     "description": "Cut on the bias from lustrous 100% silk charmeuse, this slip dress drapes beautifully over the body. Featuring a subtle V-neck and adjustable spaghetti straps, it's the essence of minimalist elegance.",
     "descriptionHtml": "<p>Cut on the bias from lustrous 100% silk charmeuse, this slip dress drapes beautifully over the body. Featuring a subtle V-neck and adjustable spaghetti straps, it's the essence of minimalist elegance.</p>",
     "price": 480,
-    "featuredImage": { "url": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=1080&auto=format&fit=crop", "width": 800, "height": 1000, "altText": "Silk Slip Dress in Black", "hint": "silk dress" },
+    "featuredImage": { "url": "https://images.unsplash.com/photo-1652445830470-9852667150b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzaWxrJTIwZHJlc3N8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Silk Slip Dress in Black", "hint": "silk dress" },
     "images": [
-      { "id": "img_d1_1", "url": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=1080&auto=format&fit=crop", "width": 800, "height": 1000, "altText": "Black dress", "hint": "silk dress" },
-      { "id": "img_d1_2", "url": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1080&auto=format&fit=crop", "width": 800, "height": 1000, "altText": "Champagne dress", "hint": "champagne dress" }
+      { "id": "img_d1_1", "url": "https://images.unsplash.com/photo-1652445830470-9852667150b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzaWxrJTIwZHJlc3N8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Black dress", "hint": "silk dress" },
+      { "id": "img_d1_2", "url": "https://images.unsplash.com/photo-1673936089727-6edda18b127e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaGFtcGFnbmUlMjBkcmVzc3xlbnwwfHx8fDE3NjcxMzQ1Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080", "width": 800, "height": 1000, "altText": "Champagne dress", "hint": "champagne dress" }
     ],
     "options": [
       { "name": "Color", "values": ["Onyx", "Champagne"] },
@@ -119,4 +119,4 @@
     ],
     "tags": ["clothing", "dress"]
   }
-]
+]]
