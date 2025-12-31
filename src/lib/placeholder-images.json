@@ -85,6 +85,18 @@
       "imageHint": "minimalist architecture"
     },
     {
+      "id": "craftsmanship-1",
+      "imageUrl": "https://images.unsplash.com/photo-1610480356542-632b740523b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwd29ya2luZ3xlbnwwfHx8fDE3Njc5NjMyMDB8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "description": "Artisan craftsman carefully working on a piece of jewelry.",
+      "imageHint": "artisan jewelry"
+    },
+    {
+      "id": "sustainability-1",
+      "imageUrl": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJpbGl0eXxlbnwwfHx8fDE3Njc5NjMzMjJ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "description": "Hands holding a small plant, symbolizing sustainability and care for the environment.",
+      "imageHint": "sustainability nature"
+    },
+    {
       "id": "cat-jewelry",
       "description": "Jewelry collection",
       "imageUrl": "https://images.unsplash.com/photo-1617038220319-c6b743037642?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxqZXdlbHJ5JTIwY29sbGVjdGlvbnxlbnwwfHx8fDE3NjcxMzQ2ODZ8MA&ixlib=rb-4.0.3&q=80&w=1080",

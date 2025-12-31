@@ -4,17 +4,15 @@
 import { useCart } from "@/context/cart-context";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { formatPrice } from "@/lib/utils";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useForm, FormProvider, SubmitHandler } from "react-hook-form";
+import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -51,7 +49,7 @@ const formSchema = z.object({
 type FormData = z.infer<typeof formSchema>;
 
 export default function CheckoutPage() {
-  const { cart, cartTotal, totalItems, clearCart } = useCart();
+  const { cart, cartTotal, clearCart } = useCart();
   const router = useRouter();
 
   useEffect(() => {
@@ -85,7 +83,7 @@ export default function CheckoutPage() {
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
     console.log("Order submitted", data);
-    clearCart();
+    clearCart(); // This will also set lastOrder in context
     router.push("/order-confirmation");
   };
 

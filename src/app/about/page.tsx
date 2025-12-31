@@ -13,8 +13,8 @@ export const metadata = {
 
 export default function AboutPage() {
   const image1 = PlaceHolderImages.find(p => p.id === "philosophy-1");
-  const image2 = PlaceHolderImages.find(p => p.id === "craftsmanship-1") ?? { imageUrl: "https://picsum.photos/seed/craft/800/1000", description: "Craftsman working", imageHint: "craftsmanship" };
-  const image3 = PlaceHolderImages.find(p => p.id === "sustainability-1") ?? { imageUrl: "https://picsum.photos/seed/sustain/800/1000", description: "Lush green landscape", imageHint: "sustainability" };
+  const image2 = PlaceHolderImages.find(p => p.id === "craftsmanship-1");
+  const image3 = PlaceHolderImages.find(p => p.id === "sustainability-1");
 
   return (
     <div className="bg-background">

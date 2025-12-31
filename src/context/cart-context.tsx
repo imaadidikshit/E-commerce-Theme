@@ -15,7 +15,6 @@ interface CartContextType {
   isCartOpen: boolean;
   setIsCartOpen: (isOpen: boolean) => void;
   lastOrder: CartItem[] | null;
-  setLastOrder: (cart: CartItem[]) => void;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -23,7 +22,7 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 export function CartProvider({ children }: { children: ReactNode }) {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const [lastOrder, setLastOrderState] = useState<CartItem[] | null>(null);
+  const [lastOrder, setLastOrder] = useState<CartItem[] | null>(null);
 
   const addToCart = (product: Product, variant: Variant, quantity = 1) => {
     setCart((prevCart) => {
@@ -39,7 +38,6 @@ export function CartProvider({ children }: { children: ReactNode }) {
         return [...prevCart, { product, variant, quantity }];
       }
     });
-    setIsCartOpen(true);
   };
 
   const removeFromCart = (variantId: string) => {
@@ -57,13 +55,9 @@ export function CartProvider({ children }: { children: ReactNode }) {
       )
     );
   };
-  
-  const setLastOrder = (cart: CartItem[]) => {
-      setLastOrderState(cart);
-  }
 
   const clearCart = () => {
-    setLastOrder(cart);
+    setLastOrder(cart); // Set the last order before clearing
     setCart([]);
   }
 
@@ -88,7 +82,6 @@ export function CartProvider({ children }: { children: ReactNode }) {
     isCartOpen,
     setIsCartOpen,
     lastOrder,
-    setLastOrder,
   };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
