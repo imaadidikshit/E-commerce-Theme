@@ -109,8 +109,8 @@ export default async function HomePage() {
                      <Image
                         src={categoryImages[collection.handle]!}
                         alt={`A collection of ${collection.title}`}
-                        width={400}
-                        height={500}
+                        width={800}
+                        height={1000}
                         className="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                         data-ai-hint={collection.title.toLowerCase()}
                       />
@@ -206,8 +206,8 @@ export default async function HomePage() {
                     <Image
                         src={philosophyImage.imageUrl}
                         alt={philosophyImage.description}
-                        width={600}
-                        height={750}
+                        width={800}
+                        height={1000}
                         className="h-full w-full object-cover object-center"
                         data-ai-hint={philosophyImage.imageHint}
                     />
@@ -220,7 +220,7 @@ export default async function HomePage() {
                     At Aether, we believe in radical minimalism. We pare everything back to its essential qualities, creating pieces that are timeless, not trendy. Our focus is on impeccable craftsmanship, the finest materials, and sustainable practices. 
                 </p>
                 <p className="text-muted-foreground mt-4 text-lg">
-                    Each item in our collection is designed to be a quiet statement of quality, intended to be loved and worn for years to come.
+                    Each item in our collection is a quiet statement of quality, intended to be loved and worn for years to come.
                 </p>
                  <Button asChild variant="link" className="mt-4 p-0 text-lg">
                     <Link href="/about">

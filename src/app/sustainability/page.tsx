@@ -1,15 +1,21 @@
 
 import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+
 export default function SustainabilityPage() {
+    const heroImage = PlaceHolderImages.find(p => p.id === 'sustainability-hero');
     return (
          <div className="bg-background">
             <div className="relative h-[50vh] bg-secondary/50">
-                <Image
-                    src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2813&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8f"
-                    alt="Hands holding a small plant"
-                    fill
-                    className="object-cover"
-                />
+                {heroImage && (
+                    <Image
+                        src={heroImage.imageUrl}
+                        alt={heroImage.description}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={heroImage.imageHint}
+                    />
+                )}
                  <div className="absolute inset-0 bg-gradient-to-t from-background" />
             </div>
             <div className="container mx-auto px-4 -mt-24 relative z-10">

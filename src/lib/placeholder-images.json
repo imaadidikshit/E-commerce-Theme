@@ -3,121 +3,61 @@
     {
       "id": "hero-1",
       "description": "Abstract flowing fabric",
-      "imageUrl": "https://images.unsplash.com/photo-1762111908673-4c0f4643baa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMGZhYnJpY3xlbnwwfHx8fDE3NjcxMzQ1Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1762111908673-4c0f4643baa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMGZhYnJpY3xlbnwwfHx8fDE3NjcxMzQ1Mzh8MA&ixlib=rb-4.1.0&q=80&w=1920",
       "imageHint": "abstract fabric"
-    },
-    {
-      "id": "ring-1",
-      "description": "Diamond ring on a neutral background",
-      "imageUrl": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkaWFtb25kJTIwcmluZ3xlbnwwfHx8fDE3NjcxMDIxODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "diamond ring"
-    },
-    {
-      "id": "ring-2",
-      "description": "Diamond ring close-up shot",
-      "imageUrl": "https://images.unsplash.com/photo-1664178266066-e37e0d25e6a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxqZXdlbHJ5JTIwbGlmZXN0eWxlfGVufDB8fHx8MTc2NzEzNDUzOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "jewelry lifestyle"
-    },
-    {
-      "id": "ring-3",
-      "description": "Diamond ring on a model's hand",
-      "imageUrl": "https://images.unsplash.com/photo-1716366192995-ba6a256b2020?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyaW5nJTIwbW9kZWx8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "ring model"
-    },
-    {
-      "id": "tote-1",
-      "description": "Black leather tote bag",
-      "imageUrl": "https://images.unsplash.com/photo-1512505069313-c830f5a9643f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsZWF0aGVyJTIwdG90ZXxlbnwwfHx8fDE3NjcwMzI1MDh8MA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "leather tote"
-    },
-    {
-      "id": "tote-2",
-      "description": "Cognac leather tote bag",
-      "imageUrl": "https://images.unsplash.com/photo-1741086154510-522e68f76933?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxiYWclMjBkZXRhaWx8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "bag detail"
-    },
-    {
-      "id": "sweater-1",
-      "description": "Heather grey cashmere sweater",
-      "imageUrl": "https://images.unsplash.com/photo-1677847208228-fe3c52feb441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYXNobWVyZSUyMHN3ZWF0ZXJ8ZW58MHx8fHwxNzY3MDI2MzcxfDA&ixlibrb-4.1.0&q=80&w=1080",
-      "imageHint": "cashmere sweater"
-    },
-    {
-      "id": "sweater-2",
-      "description": "Camel colored cashmere sweater",
-      "imageUrl": "https://images.unsplash.com/photo-1737674725424-d08449adb7fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYW1lbCUyMHN3ZWF0ZXJ8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "camel sweater"
-    },
-    {
-      "id": "necklace-1",
-      "description": "Gold pendant necklace",
-      "imageUrl": "https://images.unsplash.com/photo-1611107683227-e9060eccd846?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxnb2xkJTIwbmVja2xhY2V8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "gold necklace"
-    },
-    {
-      "id": "necklace-2",
-      "description": "Gold pendant necklace on a model",
-      "imageUrl": "https://images.unsplash.com/photo-1614999612412-3b1dbcd68e40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZWNrbGFjZSUyMG1vZGVsfGVufDB8fHx8MTc2NzEzNDUzOHww&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "necklace model"
-    },
-    {
-      "id": "dress-1",
-      "description": "Black silk slip dress",
-      "imageUrl": "https://images.unsplash.com/photo-1652445830470-9852667150b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzaWxrJTIwZHJlc3N8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "silk dress"
-    },
-    {
-      "id": "dress-2",
-      "description": "Champagne silk slip dress",
-      "imageUrl": "https://images.unsplash.com/photo-1673936089727-6edda18b127e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaGFtcGFnbmUlMjBkcmVzc3xlbnwwfHx8fDE3NjcxMzQ1Mzh8MA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "champagne dress"
     },
     {
       "id": "menu-promo-1",
       "description": "Woman wearing elegant jewelry",
-      "imageUrl": "https://images.unsplash.com/photo-1731194862220-92945fe3a5dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWxlZ2FudCUyMGpld2Vscnl8ZW58MHx8fHwxNzY3MTM4fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1731194862220-92945fe3a5dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWxlZ2FudCUyMGpld2Vscnl8ZW58MHx8fHwxNzY3MTM4fDA&ixlib=rb-4.1.0&q=80&w=800",
       "imageHint": "elegant jewelry"
     },
     {
       "id": "philosophy-1",
       "description": "Minimalist architectural detail",
-      "imageUrl": "https://images.unsplash.com/photo-1481253651120-4e343d0737d9?q=80&w=2750&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1481253651120-4e343d0737d9?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "minimalist architecture"
     },
     {
       "id": "craftsmanship-1",
-      "imageUrl": "https://images.unsplash.com/photo-1556761175-597369523a55?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1556761175-597369523a55?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "Artisan craftsman carefully working on a piece of jewelry.",
       "imageHint": "artisan jewelry"
     },
     {
       "id": "sustainability-1",
-      "imageUrl": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=2834&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "Hands holding a small plant, symbolizing sustainability and care for the environment.",
       "imageHint": "sustainability nature"
     },
     {
+      "id": "sustainability-hero",
+      "description": "Hands holding a small plant",
+      "imageUrl": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2813&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "sustainability plant"
+    },
+    {
       "id": "cat-jewelry",
       "description": "Jewelry collection",
-      "imageUrl": "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?q=80&w=800&h=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "jewelry collection"
     },
     {
       "id": "cat-clothing",
       "description": "Minimalist clothing rack",
-      "imageUrl": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtaW5pbWFsaXN0JTIwY2xvdGhpbmd8ZW58MHx8fHwxNzY3MTM0NzE4fDA&ixlib.rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtaW5pbWFsaXN0JTIwY2xvdGhpbmd8ZW58MHx8fHwxNzY3MTM0NzE4fDA&ixlib=rb-4.0.3&q=80&w=800&h=1000",
       "imageHint": "minimalist clothing"
     },
     {
       "id": "cat-accessories",
       "description": "Designer handbag and watch",
-      "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&h=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "luxury accessories"
     },
     {
       "id": "lookbook-1",
       "description": "Woman in a stylish outfit, perfect for a lookbook",
-      "imageUrl": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2124&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1600&h=900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "fashion lookbook"
     }
   ]
