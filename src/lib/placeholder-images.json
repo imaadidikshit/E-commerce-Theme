@@ -39,79 +39,79 @@
     {
       "id": "sweater-1",
       "description": "Heather grey cashmere sweater",
-      "imageUrl": "https://images.unsplash.com/photo-1677847208228-fe3c52feb441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYXNobWVyZSUyMHN3ZWF0ZXJ8ZW58MHx8fHwxNzY3MDI2MzcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1677847208228-fe3c52feb441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYXNobWVyZSUyMHN3ZWF0ZXJ8ZW58MHx8fHwxNzY3MDI2MzcxfDA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "cashmere sweater"
     },
     {
       "id": "sweater-2",
       "description": "Camel colored cashmere sweater",
-      "imageUrl": "https://images.unsplash.com/photo-1737674725424-d08449adb7fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYW1lbCUyMHN3ZWF0ZXJ8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1737674725424-d08449adb7fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYW1lbCUyMHN3ZWF0ZXJ8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "camel sweater"
     },
     {
       "id": "necklace-1",
       "description": "Gold pendant necklace",
-      "imageUrl": "https://images.unsplash.com/photo-1611107683227-e9060eccd846?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxnb2xkJTIwbmVja2xhY2V8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1611107683227-e9060eccd846?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxnb2xkJTIwbmVja2xhY2V8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "gold necklace"
     },
     {
       "id": "necklace-2",
       "description": "Gold pendant necklace on a model",
-      "imageUrl": "https://images.unsplash.com/photo-1614999612412-3b1dbcd68e40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZWNrbGFjZSUyMG1vZGVsfGVufDB8fHx8MTc2NzEzNDUzOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1614999612412-3b1dbcd68e40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZWNrbGFjZSUyMG1vZGVsfGVufDB8fHx8MTc2NzEzNDUzOHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "necklace model"
     },
     {
       "id": "dress-1",
       "description": "Black silk slip dress",
-      "imageUrl": "https://images.unsplash.com/photo-1652445830470-9852667150b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzaWxrJTIwZHJlc3N8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1652445830470-9852667150b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzaWxrJTIwZHJlc3N8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "silk dress"
     },
     {
       "id": "dress-2",
       "description": "Champagne silk slip dress",
-      "imageUrl": "https://images.unsplash.com/photo-1673936089727-6edda18b127e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaGFtcGFnbmUlMjBkcmVzc3xlbnwwfHx8fDE3NjcxMzQ1Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1673936089727-6edda18b127e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaGFtcGFnbmUlMjBkcmVzc3xlbnwwfHx8fDE3NjcxMzQ1Mzh8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "champagne dress"
     },
     {
       "id": "menu-promo-1",
       "description": "Woman wearing elegant jewelry",
-      "imageUrl": "https://images.unsplash.com/photo-1731194862220-92945fe3a5dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWxlZ2FudCUyMGpld2Vscnl8ZW58MHx8fHwxNzY3MTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1731194862220-92945fe3a5dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWxlZ2FudCUyMGpld2Vscnl8ZW58MHx8fHwxNzY3MTM4fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "elegant jewelry"
     },
     {
       "id": "philosophy-1",
       "description": "Minimalist architectural detail",
-      "imageUrl": "https://images.unsplash.com/photo-1519962149839-994119910a9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxNaW5pbWFsaXN0JTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc2NzEzNDYxOHww&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1519962149839-994119910a9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxNaW5pbWFsaXN0JTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc2NzEzNDYxOHww&ixlib.rb-4.0.3&q=80&w=1080",
       "imageHint": "minimalist architecture"
     },
     {
       "id": "craftsmanship-1",
-      "imageUrl": "https://images.unsplash.com/photo-1610480356542-632b740523b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwd29ya2luZ3xlbnwwfHx8fDE3Njc5NjMyMDB8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1610480356542-632b740523b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwd29ya2luZ3xlbnwwfHx8fDE3Njc5NjMyMDB8MA&ixlib.rb-4.0.3&q=80&w=1080",
       "description": "Artisan craftsman carefully working on a piece of jewelry.",
       "imageHint": "artisan jewelry"
     },
     {
       "id": "sustainability-1",
-      "imageUrl": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJpbGl0eXxlbnwwfHx8fDE3Njc5NjMzMjJ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJpbGl0eXxlbnwwfHx8fDE3Njc5NjMzMjJ8MA&ixlib.rb-4.0.3&q=80&w=1080",
       "description": "Hands holding a small plant, symbolizing sustainability and care for the environment.",
       "imageHint": "sustainability nature"
     },
     {
       "id": "cat-jewelry",
       "description": "Jewelry collection",
-      "imageUrl": "https://images.unsplash.com/photo-1617038220319-c6b743037642?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxqZXdlbHJ5JTIwY29sbGVjdGlvbnxlbnwwfHx8fDE3NjcxMzQ2ODZ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "jewelry collection"
     },
     {
       "id": "cat-clothing",
       "description": "Minimalist clothing rack",
-      "imageUrl": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtaW5pbWFsaXN0JTIwY2xvdGhpbmd8ZW58MHx8fHwxNzY3MTM0NzE4fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtaW5pbWFsaXN0JTIwY2xvdGhpbmd8ZW58MHx8fHwxNzY3MTM0NzE4fDA&ixlib.rb-4.0.3&q=80&w=1080",
       "imageHint": "minimalist clothing"
     },
     {
       "id": "cat-accessories",
       "description": "Designer handbag and watch",
-      "imageUrl": "https://images.unsplash.com/photo-1579566346927-c6276a0a996f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsYWNlc3Nvcmllc3xlbnwwfHx8fDE3NjcxMzQ3NDN8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579566346927-c6276a0a996f?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "luxury accessories"
     },
     {
