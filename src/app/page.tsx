@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { getFeaturedProducts, getCollections } from "@/lib/data";
+import { getFeaturedProducts, getCollections, getLookbook } from "@/lib/data";
 import { ProductCard } from "@/components/product-card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { AetherLogo } from "@/components/icons";
@@ -15,12 +15,29 @@ import {
 } from "@/components/ui/carousel";
 import { ArrowRight, Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import type { Product } from "@/lib/types";
+
+// A server component to fetch product data
+async function LookbookProductCard({ productId }: { productId: string }) {
+  const products = await getFeaturedProducts(); // Or a more specific fetch
+  const product = products.find(p => p.id === productId);
+  if (!product) return null;
+  return (
+      <div className="w-64">
+        <ProductCard product={product as Product} />
+      </div>
+  );
+}
 
 export default async function HomePage() {
   const featuredProducts = await getFeaturedProducts();
   const collections = (await getCollections()).filter(c => c.handle !== 'all');
+  const lookbook = await getLookbook();
+  
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-1');
   const philosophyImage = PlaceHolderImages.find(p => p.id === 'philosophy-1');
+  const lookbookImage = PlaceHolderImages.find(p => p.id === lookbook.imageId);
 
   const testimonials = [
     {
@@ -109,8 +126,52 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+      
+      {lookbook && lookbookImage && (
+        <section className="py-16 md:py-24 bg-secondary/50">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-headline">{lookbook.title}</h2>
+              <p className="text-muted-foreground mt-2">{lookbook.description}</p>
+            </div>
+            <div className="relative aspect-[16/9] w-full rounded-lg overflow-hidden">
+              <Image
+                src={lookbookImage.imageUrl}
+                alt={lookbookImage.description}
+                fill
+                className="object-cover"
+                data-ai-hint={lookbookImage.imageHint}
+              />
+              {lookbook.hotspots.map((hotspot, index) => (
+                <Popover key={index}>
+                  <PopoverTrigger asChild>
+                    <button 
+                      className="absolute w-6 h-6 rounded-full bg-background/50 backdrop-blur-sm animate-pulse"
+                      style={{ 
+                        left: `${hotspot.position.x}%`, 
+                        top: `${hotspot.position.y}%`,
+                        transform: 'translate(-50%, -50%)' 
+                      }}
+                      aria-label={`Show product ${hotspot.product.name}`}
+                    >
+                      <span className="relative flex h-full w-full">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-6 w-6 bg-primary/50 border-2 border-primary-foreground"></span>
+                      </span>
+                    </button>
+                  </PopoverTrigger>
+                  <PopoverContent align="center" side="top" className="p-2 rounded-lg">
+                    <LookbookProductCard productId={hotspot.product.id} />
+                  </PopoverContent>
+                </Popover>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
-      <section className="py-16 md:py-24 bg-secondary/50">
+
+      <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-headline">Featured Products</h2>
@@ -138,7 +199,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-secondary/50">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
             <div className="aspect-[4/5] w-full overflow-hidden rounded-lg">
                  {philosophyImage && (
@@ -170,7 +231,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-secondary/50">
+      <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-headline">From Our Community</h2>
@@ -196,5 +257,3 @@ export default async function HomePage() {
     </div>
   );
 }
-
-    

@@ -75,7 +75,7 @@
     {
       "id": "menu-promo-1",
       "description": "Woman wearing elegant jewelry",
-      "imageUrl": "https://images.unsplash.com/photo-1731194862220-92945fe3a5dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWxlZ2FudCUyMGpld2Vscnl8ZW58MHx8fHwxNzY3MTM0NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1731194862220-92945fe3a5dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWxlZ2FudCUyMGpld2Vscnl8ZW58MHx8fHwxNzY3MTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "elegant jewelry"
     },
     {
@@ -101,6 +101,12 @@
       "description": "Designer handbag and watch",
       "imageUrl": "https://images.unsplash.com/photo-1579566346927-c6276a0a996f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsYWNlc3Nvcmllc3xlbnwwfHx8fDE3NjcxMzQ3NDN8MA&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "luxury accessories"
+    },
+    {
+      "id": "lookbook-1",
+      "description": "Woman in a stylish outfit, perfect for a lookbook",
+      "imageUrl": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2124&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "fashion lookbook"
     }
   ]
 }

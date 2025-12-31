@@ -1,5 +1,6 @@
-import type { Product, Collection, MegaMenu } from './types';
+import type { Product, Collection, MegaMenu, Lookbook } from './types';
 import { PlaceHolderImages } from './placeholder-images';
+import LookbookData from './lookbook.json';
 
 const products: Product[] = [
   {
@@ -197,4 +198,15 @@ export async function getCollectionByHandle(handle: string): Promise<Collection 
 
 export async function getMegaMenu(): Promise<MegaMenu> {
   return Promise.resolve(megaMenu);
+}
+
+export async function getLookbook(): Promise<Lookbook> {
+    const lookbookWithProducts = {
+        ...LookbookData.lookbook,
+        hotspots: LookbookData.lookbook.hotspots.map(hotspot => ({
+            ...hotspot,
+            product: products.find(p => p.id === hotspot.productId)
+        })).filter(hotspot => hotspot.product) // Filter out hotspots where product is not found
+    };
+    return Promise.resolve(lookbookWithProducts as Lookbook);
 }

@@ -1,0 +1,17 @@
+{
+    "lookbook": {
+        "title": "Shop the Look",
+        "description": "Discover curated styles. Hover over the items to shop.",
+        "imageId": "lookbook-1",
+        "hotspots": [
+            {
+                "productId": "prod_3",
+                "position": { "x": 50, "y": 45 }
+            },
+            {
+                "productId": "prod_2",
+                "position": { "x": 70, "y": 65 }
+            }
+        ]
+    }
+}

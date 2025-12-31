@@ -73,3 +73,19 @@ export type MegaMenu = {
     hint?: string;
   }
 }
+
+export type LookbookHotspot = {
+  productId: string;
+  product: Product;
+  position: {
+    x: number;
+    y: number;
+  };
+};
+
+export type Lookbook = {
+  title: string;
+  description: string;
+  imageId: string;
+  hotspots: LookbookHotspot[];
+};
