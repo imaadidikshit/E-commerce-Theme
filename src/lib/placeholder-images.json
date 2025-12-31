@@ -3,61 +3,61 @@
     {
       "id": "hero-1",
       "description": "Abstract flowing fabric",
-      "imageUrl": "https://images.unsplash.com/photo-1762111908673-4c0f4643baa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMGZhYnJpY3xlbnwwfHx8fDE3NjcxMzQ1Mzh8MA&ixlib=rb-4.1.0&q=80&w=1920",
+      "imageUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&q=80&w=1920",
       "imageHint": "abstract fabric"
     },
     {
       "id": "menu-promo-1",
       "description": "Woman wearing elegant jewelry",
-      "imageUrl": "https://images.unsplash.com/photo-1731194862220-92945fe3a5dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWxlZ2FudCUyMGpld2Vscnl8ZW58MHx8fHwxNzY3MTM4fDA&ixlib=rb-4.1.0&q=80&w=800",
+      "imageUrl": "https://images.unsplash.com/photo-1576723444512-8177465ae589?auto=format&fit=crop&q=80&w=800",
       "imageHint": "elegant jewelry"
     },
     {
       "id": "philosophy-1",
       "description": "Minimalist architectural detail",
-      "imageUrl": "https://images.unsplash.com/photo-1481253651120-4e343d0737d9?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1800",
       "imageHint": "minimalist architecture"
     },
     {
       "id": "craftsmanship-1",
-      "imageUrl": "https://images.unsplash.com/photo-1556761175-597369523a55?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "description": "Artisan craftsman carefully working on a piece of jewelry.",
+      "description": "Artisan craftsman carefully working on a piece of jewelry",
+      "imageUrl": "https://images.unsplash.com/photo-1621506821957-1b50ab77f796?auto=format&fit=crop&q=80&w=1800",
       "imageHint": "artisan jewelry"
     },
     {
       "id": "sustainability-1",
-      "imageUrl": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "description": "Hands holding a small plant, symbolizing sustainability and care for the environment.",
+      "description": "Hands holding a small plant",
+      "imageUrl": "https://images.unsplash.com/photo-1542601906990-b4d3fea77835?auto=format&fit=crop&q=80&w=1800",
       "imageHint": "sustainability nature"
     },
     {
       "id": "sustainability-hero",
-      "description": "Hands holding a small plant",
-      "imageUrl": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2813&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Hands holding a small plant (Hero)",
+      "imageUrl": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&q=80&w=2800",
       "imageHint": "sustainability plant"
     },
     {
       "id": "cat-jewelry",
       "description": "Jewelry collection",
-      "imageUrl": "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?q=80&w=800&h=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=800",
       "imageHint": "jewelry collection"
     },
     {
       "id": "cat-clothing",
       "description": "Minimalist clothing rack",
-      "imageUrl": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtaW5pbWFsaXN0JTIwY2xvdGhpbmd8ZW58MHx8fHwxNzY3MTM0NzE4fDA&ixlib=rb-4.0.3&q=80&w=800&h=1000",
+      "imageUrl": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80&w=800",
       "imageHint": "minimalist clothing"
     },
     {
       "id": "cat-accessories",
       "description": "Designer handbag and watch",
-      "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&h=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&q=80&w=800",
       "imageHint": "luxury accessories"
     },
     {
       "id": "lookbook-1",
-      "description": "Woman in a stylish outfit, perfect for a lookbook",
-      "imageUrl": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1600&h=900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Woman in a stylish outfit",
+      "imageUrl": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=1600",
       "imageHint": "fashion lookbook"
     }
   ]
