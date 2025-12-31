@@ -2,7 +2,7 @@
 "use client";
 
 import { useState, useMemo } from 'react';
-import type { Product } from '@/lib/types';
+import type { Product, ProductOption } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { useCart } from '@/context/cart-context';
 import { cn } from '@/lib/utils';
@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { CheckCircle, XCircle } from 'lucide-react';
 
-function VariantSelector({ option, selectedOptions, setSelectedOptions }: { option: { name: string, values: string[] }, selectedOptions: { [key: string]: string }, setSelectedOptions: React.Dispatch<React.SetStateAction<{ [key: string]: string }>> }) {
+function VariantSelector({ option, selectedOptions, setSelectedOptions }: { option: ProductOption, selectedOptions: { [key: string]: string }, setSelectedOptions: React.Dispatch<React.SetStateAction<{ [key: string]: string }>> }) {
   const isColor = option.name.toLowerCase() === 'color';
 
   return (
@@ -68,12 +68,21 @@ export function AddToCartForm({ product }: { product: Product }) {
   const selectedVariant = useMemo(() => {
     return product.variants.find(variant => {
       return Object.entries(selectedOptions).every(([name, value]) => {
-        // This logic needs to be more robust if option names change
-        const variantOption = variant.title.split(' / ').find(v => option.values.includes(v.trim()));
-        return variant.title.split(' / ').includes(value);
+        // The variant title is a string like "Color / Size", e.g., "White Gold / 5"
+        // We need to match the selected option value to the correct part of the title.
+        const productOption = product.options.find(opt => opt.name === name);
+        if (!productOption) return false;
+
+        const variantValues = variant.title.split(' / ');
+        const optionIndex = product.options.findIndex(opt => opt.name === name);
+
+        if (optionIndex !== -1 && variantValues[optionIndex]) {
+          return variantValues[optionIndex].trim() === value;
+        }
+        return false;
       });
     });
-  }, [product.variants, selectedOptions, product.options]);
+  }, [product, selectedOptions]);
 
   const handleAddToCart = () => {
     if (selectedVariant) {
