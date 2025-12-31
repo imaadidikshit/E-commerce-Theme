@@ -1,7 +1,7 @@
+
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getProductByHandle, getFeaturedProducts } from '@/lib/data';
-import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
@@ -11,6 +11,7 @@ import {
 import { formatPrice } from '@/lib/utils';
 import { ProductCard } from '@/components/product-card';
 import { StickyAddToCart } from '@/components/sticky-add-to-cart';
+import { AddToCartForm } from '@/components/add-to-cart-form';
 
 export async function generateMetadata({ params }: { params: { handle: string } }) {
   const product = await getProductByHandle(params.handle);
@@ -57,9 +58,7 @@ export default async function ProductPage({ params }: { params: { handle: string
             
             <p className="text-muted-foreground mb-8">{product.description}</p>
             
-            {/* Variant selectors would go here. For this example, we keep it simple. */}
-            
-            <Button size="lg" className="w-full" id="main-add-to-cart">Add to Cart</Button>
+            <AddToCartForm product={product} />
 
             <Accordion type="single" collapsible className="w-full mt-8">
               <AccordionItem value="description">

@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -73,7 +74,9 @@ export function CartDrawer() {
                 <span>Subtotal</span>
                 <span>{formatPrice(cartTotal)}</span>
               </div>
-              <Button size="lg" className="w-full">Proceed to Checkout</Button>
+              <Button asChild size="lg" className="w-full" onClick={() => setIsCartOpen(false)}>
+                <Link href="/checkout">Proceed to Checkout</Link>
+              </Button>
               <Button variant="link" onClick={() => setIsCartOpen(false)}>Continue Shopping</Button>
             </SheetFooter>
           </>

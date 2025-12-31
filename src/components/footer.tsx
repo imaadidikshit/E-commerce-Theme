@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
@@ -19,18 +20,18 @@ export function Footer() {
           <div>
             <h3 className="font-headline text-lg mb-4">Customer Care</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><Link href="#" className="hover:text-foreground">Contact Us</Link></li>
-              <li><Link href="#" className="hover:text-foreground">Shipping & Returns</Link></li>
-              <li><Link href="#" className="hover:text-foreground">FAQ</Link></li>
-              <li><Link href="#" className="hover:text-foreground">Sizing Guide</Link></li>
+              <li><Link href="/contact" className="hover:text-foreground">Contact Us</Link></li>
+              <li><Link href="/shipping-returns" className="hover:text-foreground">Shipping & Returns</Link></li>
+              <li><Link href="/faq" className="hover:text-foreground">FAQ</Link></li>
+              <li><Link href="/sizing" className="hover:text-foreground">Sizing Guide</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="font-headline text-lg mb-4">Company</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><Link href="#" className="hover:text-foreground">Our Story</Link></li>
-              <li><Link href="#" className="hover:text-foreground">Journal</Link></li>
-              <li><Link href="#" className="hover:text-foreground">Sustainability</Link></li>
+              <li><Link href="/about" className="hover:text-foreground">Our Story</Link></li>
+              <li><Link href="/journal" className="hover:text-foreground">Journal</Link></li>
+              <li><Link href="/sustainability" className="hover:text-foreground">Sustainability</Link></li>
             </ul>
           </div>
         </div>
@@ -40,9 +41,9 @@ export function Footer() {
             <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Aether. All Rights Reserved.</p>
           </div>
           <div className="text-sm text-muted-foreground">
-            <Link href="#" className="hover:text-foreground">Terms of Service</Link>
+            <Link href="/terms" className="hover:text-foreground">Terms of Service</Link>
             <span className="mx-2">|</span>
-            <Link href="#" className="hover:text-foreground">Privacy Policy</Link>
+            <Link href="/privacy" className="hover:text-foreground">Privacy Policy</Link>
           </div>
         </div>
       </div>

@@ -223,7 +223,7 @@ export default async function HomePage() {
                     Each item in our collection is designed to be a quiet statement of quality, intended to be loved and worn for years to come.
                 </p>
                  <Button asChild variant="link" className="mt-4 p-0 text-lg">
-                    <Link href="#">
+                    <Link href="/about">
                         Read Our Story <ArrowRight className="h-4 w-4 ml-2" />
                     </Link>
                 </Button>

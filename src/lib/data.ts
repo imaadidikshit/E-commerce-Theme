@@ -1,3 +1,4 @@
+
 import type { Product, Collection, MegaMenu, Lookbook } from './types';
 import { PlaceHolderImages } from './placeholder-images';
 import LookbookData from './lookbook.json';
@@ -21,9 +22,10 @@ const products: Product[] = [
       { name: 'Size', values: ['5', '6', '7', '8'] },
     ],
     variants: [
-      { id: 'var_r1_wg_5', title: 'White Gold / 5', price: 2400, imageId: 'img_r1_1', color: 'White Gold', colorHex: '#E5E7EB', size: '5' },
-      { id: 'var_r1_yg_6', title: 'Yellow Gold / 6', price: 2450, imageId: 'img_r1_1', color: 'Yellow Gold', colorHex: '#FBBF24', size: '6' },
-      { id: 'var_r1_rg_7', title: 'Rose Gold / 7', price: 2450, imageId: 'img_r1_1', color: 'Rose Gold', colorHex: '#FBCFE8', size: '7' },
+      { id: 'var_r1_wg_5', title: 'White Gold / 5', price: 2400, imageId: 'img_r1_1', color: 'White Gold', colorHex: '#E5E7EB', size: '5', availableForSale: true },
+      { id: 'var_r1_yg_6', title: 'Yellow Gold / 6', price: 2450, imageId: 'img_r1_1', color: 'Yellow Gold', colorHex: '#FBBF24', size: '6', availableForSale: true },
+      { id: 'var_r1_rg_7', title: 'Rose Gold / 7', price: 2450, imageId: 'img_r1_1', color: 'Rose Gold', colorHex: '#FBCFE8', size: '7', availableForSale: true },
+      { id: 'var_r1_wg_8', title: 'White Gold / 8', price: 2400, imageId: 'img_r1_1', color: 'White Gold', colorHex: '#E5E7EB', size: '8', availableForSale: false },
     ],
     tags: ['jewelry', 'ring', 'featured'],
   },
@@ -43,8 +45,8 @@ const products: Product[] = [
       { name: 'Color', values: ['Black', 'Cognac'] },
     ],
     variants: [
-      { id: 'var_t1_b', title: 'Black', price: 750, imageId: 'img_t1_1', color: 'Black', colorHex: '#1A1A1A' },
-      { id: 'var_t1_c', title: 'Cognac', price: 750, imageId: 'img_t1_2', color: 'Cognac', colorHex: '#964B00' },
+      { id: 'var_t1_b', title: 'Black', price: 750, imageId: 'img_t1_1', color: 'Black', colorHex: '#1A1A1A', availableForSale: true },
+      { id: 'var_t1_c', title: 'Cognac', price: 750, imageId: 'img_t1_2', color: 'Cognac', colorHex: '#964B00', availableForSale: true },
     ],
     tags: ['accessories', 'bag', 'featured'],
   },
@@ -65,8 +67,14 @@ const products: Product[] = [
       { name: 'Size', values: ['S', 'M', 'L', 'XL'] },
     ],
     variants: [
-      { id: 'var_s1_hg_m', title: 'Heather Grey / M', price: 320, imageId: 'img_s1_1', color: 'Heather Grey', colorHex: '#D1D5DB', size: 'M' },
-      { id: 'var_s1_c_m', title: 'Camel / M', price: 320, imageId: 'img_s1_2', color: 'Camel', colorHex: '#C19A6B', size: 'M' },
+        { id: 'var_s1_hg_s', title: 'Heather Grey / S', price: 320, imageId: 'img_s1_1', color: 'Heather Grey', colorHex: '#D1D5DB', size: 'S', availableForSale: true },
+        { id: 'var_s1_hg_m', title: 'Heather Grey / M', price: 320, imageId: 'img_s1_1', color: 'Heather Grey', colorHex: '#D1D5DB', size: 'M', availableForSale: true },
+        { id: 'var_s1_hg_l', title: 'Heather Grey / L', price: 320, imageId: 'img_s1_1', color: 'Heather Grey', colorHex: '#D1D5DB', size: 'L', availableForSale: true },
+        { id: 'var_s1_hg_xl', title: 'Heather Grey / XL', price: 320, imageId: 'img_s1_1', color: 'Heather Grey', colorHex: '#D1D5DB', size: 'XL', availableForSale: false },
+        { id: 'var_s1_c_s', title: 'Camel / S', price: 320, imageId: 'img_s1_2', color: 'Camel', colorHex: '#C19A6B', size: 'S', availableForSale: true },
+        { id: 'var_s1_c_m', title: 'Camel / M', price: 320, imageId: 'img_s1_2', color: 'Camel', colorHex: '#C19A6B', size: 'M', availableForSale: true },
+        { id: 'var_s1_c_l', title: 'Camel / L', price: 320, imageId: 'img_s1_2', color: 'Camel', colorHex: '#C19A6B', size: 'L', availableForSale: true },
+        { id: 'var_s1_c_xl', title: 'Camel / XL', price: 320, imageId: 'img_s1_2', color: 'Camel', colorHex: '#C19A6B', size: 'XL', availableForSale: true },
     ],
     tags: ['clothing', 'sweater', 'featured'],
   },
@@ -84,7 +92,7 @@ const products: Product[] = [
     ],
     options: [],
     variants: [
-        { id: 'var_n1_def', title: 'Default Title', price: 450, imageId: 'img_n1_1' },
+        { id: 'var_n1_def', title: 'Default Title', price: 450, imageId: 'img_n1_1', availableForSale: true },
     ],
     tags: ['jewelry', 'necklace', 'featured'],
   },
@@ -105,8 +113,14 @@ const products: Product[] = [
       { name: 'Size', values: ['XS', 'S', 'M', 'L'] },
     ],
     variants: [
-      { id: 'var_d1_o_s', title: 'Onyx / S', price: 480, imageId: 'img_d1_1', color: 'Onyx', colorHex: '#1A1A1A', size: 'S' },
-      { id: 'var_d1_c_s', title: 'Champagne / S', price: 480, imageId: 'img_d1_2', color: 'Champagne', colorHex: '#F7E7CE', size: 'S' },
+      { id: 'var_d1_o_xs', title: 'Onyx / XS', price: 480, imageId: 'img_d1_1', color: 'Onyx', colorHex: '#1A1A1A', size: 'XS', availableForSale: true },
+      { id: 'var_d1_o_s', title: 'Onyx / S', price: 480, imageId: 'img_d1_1', color: 'Onyx', colorHex: '#1A1A1A', size: 'S', availableForSale: true },
+      { id: 'var_d1_o_m', title: 'Onyx / M', price: 480, imageId: 'img_d1_1', color: 'Onyx', colorHex: '#1A1A1A', size: 'M', availableForSale: true },
+      { id: 'var_d1_o_l', title: 'Onyx / L', price: 480, imageId: 'img_d1_1', color: 'Onyx', colorHex: '#1A1A1A', size: 'L', availableForSale: false },
+      { id: 'var_d1_c_xs', title: 'Champagne / XS', price: 480, imageId: 'img_d1_2', color: 'Champagne', colorHex: '#F7E7CE', size: 'XS', availableForSale: true },
+      { id: 'var_d1_c_s', title: 'Champagne / S', price: 480, imageId: 'img_d1_2', color: 'Champagne', colorHex: '#F7E7CE', size: 'S', availableForSale: true },
+      { id: 'var_d1_c_m', title: 'Champagne / M', price: 480, imageId: 'img_d1_2', color: 'Champagne', colorHex: '#F7E7CE', size: 'M', availableForSale: true },
+      { id: 'var_d1_c_l', title: 'Champagne / L', price: 480, imageId: 'img_d1_2', color: 'Champagne', colorHex: '#F7E7CE', size: 'L', availableForSale: true },
     ],
     tags: ['clothing', 'dress'],
   }
@@ -173,7 +187,11 @@ const megaMenu: MegaMenu = {
 }
 
 // Simulate API calls
-export async function getProducts(): Promise<Product[]> {
+export async function getProducts(query?: string): Promise<Product[]> {
+  if (query) {
+    const lowerCaseQuery = query.toLowerCase();
+    return Promise.resolve(products.filter(p => p.name.toLowerCase().includes(lowerCaseQuery) || p.description.toLowerCase().includes(lowerCaseQuery) || p.tags.some(t => t.toLowerCase().includes(lowerCaseQuery))));
+  }
   return Promise.resolve(products);
 }
 

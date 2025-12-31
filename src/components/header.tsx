@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -23,8 +24,9 @@ import {
 } from "@/components/ui/sheet";
 
 function MegaMenuComponent({ menu }: { menu: MegaMenu }) {
+  const [open, setOpen] = useState(false);
   return (
-    <Popover>
+    <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
         <Button variant="link" className="text-base text-inherit hover:no-underline hover:text-primary/70 dark:hover:text-primary/70">
           {menu.title}
@@ -39,7 +41,7 @@ function MegaMenuComponent({ menu }: { menu: MegaMenu }) {
                 <ul className="space-y-3">
                   {column.links.map((link) => (
                     <li key={link.title}>
-                      <Link href={link.href} className="hover:text-primary/70 dark:hover:text-primary/70 transition-colors">
+                      <Link href={link.href} onClick={() => setOpen(false)} className="hover:text-primary/70 dark:hover:text-primary/70 transition-colors">
                         {link.title}
                       </Link>
                     </li>
@@ -49,7 +51,7 @@ function MegaMenuComponent({ menu }: { menu: MegaMenu }) {
             ))}
           </div>
           <div>
-            <Link href={menu.image.href} className="block group overflow-hidden rounded-md">
+            <Link href={menu.image.href} onClick={() => setOpen(false)} className="block group overflow-hidden rounded-md">
               <Image
                 src={menu.image.src}
                 alt={menu.image.alt}
@@ -107,8 +109,8 @@ function MobileNav({ menu }: { menu: MegaMenu }) {
             <div className="space-y-2">
                <h3 className="font-bold text-lg">About</h3>
                <ul className="space-y-2">
-                <li><Link href="#" onClick={() => setIsOpen(false)} className="block py-1">Our Story</Link></li>
-                <li><Link href="#" onClick={() => setIsOpen(false)} className="block py-1">Journal</Link></li>
+                <li><Link href="/about" onClick={() => setIsOpen(false)} className="block py-1">Our Story</Link></li>
+                <li><Link href="/journal" onClick={() => setIsOpen(false)} className="block py-1">Journal</Link></li>
                </ul>
             </div>
           </nav>
@@ -155,19 +157,23 @@ export function Header() {
             </Link>
             <nav className="hidden md:flex items-center gap-4 text-sm">
               {megaMenu && <MegaMenuComponent menu={megaMenu} />}
-              <Link href="#" className="text-base hover:text-primary/70 dark:hover:text-primary/70 transition-colors">Our Story</Link>
-              <Link href="#" className="text-base hover:text-primary/70 dark:hover:text-primary/70 transition-colors">Journal</Link>
+              <Link href="/about" className="text-base hover:text-primary/70 dark:hover:text-primary/70 transition-colors">Our Story</Link>
+              <Link href="/journal" className="text-base hover:text-primary/70 dark:hover:text-primary/70 transition-colors">Journal</Link>
             </nav>
           </div>
 
           <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" className="hidden md:inline-flex">
-              <Search className="h-5 w-5" />
-              <span className="sr-only">Search</span>
+            <Button asChild variant="ghost" size="icon" className="hidden md:inline-flex">
+              <Link href="/search">
+                <Search className="h-5 w-5" />
+                <span className="sr-only">Search</span>
+              </Link>
             </Button>
-            <Button variant="ghost" size="icon" className="hidden md:inline-flex">
-              <User className="h-5 w-5" />
-              <span className="sr-only">Account</span>
+            <Button asChild variant="ghost" size="icon" className="hidden md:inline-flex">
+              <Link href="/account">
+                <User className="h-5 w-5" />
+                <span className="sr-only">Account</span>
+              </Link>
             </Button>
             <Button
               variant="ghost"

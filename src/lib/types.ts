@@ -1,3 +1,4 @@
+
 export type Product = {
   id: string;
   handle: string;
@@ -30,6 +31,7 @@ export type Variant = {
   title: string;
   price: number;
   imageId: string;
+  availableForSale?: boolean;
   color?: string; // e.g. 'Onyx Black'
   colorHex?: string; // e.g. '#000000'
   size?: string; // e.g. 'S', 'M', 'L'

@@ -1,3 +1,4 @@
+
 "use client";
 
 import { createContext, useContext, useState, useMemo, type ReactNode } from "react";
@@ -13,6 +14,8 @@ interface CartContextType {
   totalItems: number;
   isCartOpen: boolean;
   setIsCartOpen: (isOpen: boolean) => void;
+  lastOrder: CartItem[] | null;
+  setLastOrder: (cart: CartItem[]) => void;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -20,6 +23,7 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 export function CartProvider({ children }: { children: ReactNode }) {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [lastOrder, setLastOrderState] = useState<CartItem[] | null>(null);
 
   const addToCart = (product: Product, variant: Variant, quantity = 1) => {
     setCart((prevCart) => {
@@ -54,7 +58,12 @@ export function CartProvider({ children }: { children: ReactNode }) {
     );
   };
   
+  const setLastOrder = (cart: CartItem[]) => {
+      setLastOrderState(cart);
+  }
+
   const clearCart = () => {
+    setLastOrder(cart);
     setCart([]);
   }
 
@@ -78,6 +87,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
     totalItems,
     isCartOpen,
     setIsCartOpen,
+    lastOrder,
+    setLastOrder,
   };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
